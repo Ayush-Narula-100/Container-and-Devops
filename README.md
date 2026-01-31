@@ -3,7 +3,8 @@
 
 ## LAB
 [Experiment 1](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Lab/Experiment%201)
-[Experiment 2](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Lab/Experiment%201)
+
+[Experiment 2](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Lab/Experiment%202)
 
 ### THEORY
 [Class]()
