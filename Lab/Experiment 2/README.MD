@@ -7,6 +7,9 @@ Docker Installation, Configuration and Running Images
 ## 1. Pull Docker Images
 
 Pull images from Docker Hub to your local system.
+``` bash
+docker pull nginx
+```
 
 <!-- Image: docker pull command -->
 <!-- Place image here -->
@@ -17,6 +20,9 @@ Pull images from Docker Hub to your local system.
 ## 2. Run Containers
 
 Run containers using the pulled Docker images.
+``` bash
+docker run -d -p 8080:80 nginx
+```
 
 <!-- Image: docker run command -->
 <!-- Place image here -->
@@ -27,6 +33,12 @@ Run containers using the pulled Docker images.
 ## 3. Manage Container Lifecycle
 
 Manage the lifecycle of containers including start, stop, restart, and remove operations.
+```bash
+docker ps
+docker stop <container_id>
+docker rm <container_id>
+docker rmi nginx
+```
 
 <!-- Image: container lifecycle commands -->
 <!-- Place image here -->
