@@ -3,12 +3,12 @@
 
 ## Create docker file
 
-1. create separate folder
-2. create a python program:
+1. Create separate folder
+2. Create a python program:
 
 ![python](img/python.png)
 
-3. create docker file with commands:
+3. Create docker file with commands:
 
 ```bash
 FROM python:3.8-slim
@@ -27,7 +27,7 @@ CMD [ "python","app.py" ]
 
 ---
 
-## Build and run image
+## Build and Run image
 
 1. Build the image from the docker file
 
