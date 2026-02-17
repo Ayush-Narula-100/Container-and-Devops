@@ -34,7 +34,7 @@ curl http://localhost:8080
 ![Step 3](img/verify.png)
 
 ### Key Observations
-```
+```bash
 docker images nginx
 ```
 
