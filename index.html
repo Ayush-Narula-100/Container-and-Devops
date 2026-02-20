@@ -2,62 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Containerization and DevOps</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f6f8;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
         .header {
-            background-color: #1f2933;
-            color: white;
-            padding: 30px 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
         }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            animation: scan 3s infinite;
+        }
+        
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
         h1 {
             text-align: center;
-            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
         }
+        
         .name-info {
             text-align: left;
             padding: 15px 10%;
             font-size: 14px;
-            color: #e5e7eb;
+            color: #94a3b8;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
         }
+        
         .name-info p {
-            margin: 5px 0;
+            margin: 0;
+            padding: 8px 16px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 6px;
+            transition: all 0.3s ease;
         }
+        
+        .name-info p:hover {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .name-info strong {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
         .container {
-            width: 80%;
-            margin: 40px auto;
+            width: 85%;
+            max-width: 1200px;
+            margin: 60px auto;
+            position: relative;
+            z-index: 1;
         }
+        
         .section {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+            background-size: 200% 100%;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 12px 48px rgba(59, 130, 246, 0.2);
+        }
+        
         h2 {
             margin-top: 0;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
+        
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+            border-radius: 2px;
+        }
+        
         ul {
             list-style-type: none;
             padding-left: 0;
         }
+        
         li {
-            margin: 10px 0;
+            margin: 12px 0;
+            position: relative;
+            padding-left: 30px;
         }
+        
+        li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        li:hover::before {
+            left: 5px;
+            color: #8b5cf6;
+        }
+        
         a {
             text-decoration: none;
-            color: #2563eb;
+            color: #cbd5e1;
             font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
         }
+        
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            transition: width 0.3s ease;
+        }
+        
         a:hover {
-            text-decoration: underline;
+            color: #3b82f6;
+            transform: translateX(5px);
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #2563eb, #7c3aed);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                width: 90%;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .name-info {
+                padding: 15px 5%;
+                gap: 15px;
+            }
         }
     </style>
 </head>
@@ -67,7 +270,6 @@
         <div class="name-info">
             <p><strong>Name:</strong> Ayush Narula</p>
             <p><strong>SAP ID:</strong> 500119444</p>
-            
         </div>
     </div>
     <div class="container">
@@ -77,23 +279,21 @@
                 <li><a href="Lab/Experiment 1/">Experiment 1</a></li>
                 <li><a href="Lab/Experiment 2/">Experiment 2</a></li>
                 <li><a href="Lab/Experiment 3/">Experiment 3</a></li>
-                
             </ul>
         </div>
         <div class="section">
             <h2>Theory</h2>
             <ul>
-        <li><a href="Theory/27.01.26/">27-01-2026</a></li>
-               <li><a href="Theory/28.01.26/">28-01-2026</a></li>
-               <li><a href="Theory/30.01.26/">30-01-2026</a></li>
-               <li><a href="Theory/03.02.26/">03-02-2026</a></li>
-               <li><a href="Theory/04.02.26/">04-02-2026</a></li>
-               <li><a href="Theory/05.02.26/">05-02-2026</a></li>
-               <li><a href="Theory/06.02.26/">06-02-2026</a></li>
-               <li><a href="Theory/10.02.26/">10-02-2026</a></li>
-               <li><a href="Theory/11.02.26 ( Assignment )/">11-02-2026 ( Assignment )</a></li>
-               <li><a href="Theory/11.02.26/">11-02-2026</a></li> 
-               
+                <li><a href="Theory/27.01.26/">27-01-2026</a></li>
+                <li><a href="Theory/28.01.26/">28-01-2026</a></li>
+                <li><a href="Theory/30.01.26/">30-01-2026</a></li>
+                <li><a href="Theory/03.02.26/">03-02-2026</a></li>
+                <li><a href="Theory/04.02.26/">04-02-2026</a></li>
+                <li><a href="Theory/05.02.26/">05-02-2026</a></li>
+                <li><a href="Theory/06.02.26/">06-02-2026</a></li>
+                <li><a href="Theory/10.02.26/">10-02-2026</a></li>
+                <li><a href="Theory/11.02.26 ( Assignment )/">11-02-2026 ( Assignment )</a></li>
+                <li><a href="Theory/11.02.26/">11-02-2026</a></li>
             </ul>
         </div>
     </div>
