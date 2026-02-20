@@ -53,11 +53,11 @@ docker run -d --network my_overlay --name app2 alpine sleep 3600
 # Step 4: Test communication
 docker exec app1 ping app2  # Works!
 ```
-![Swarm](./Images/1.png)
-![Swarm](./Images/2.png)
-![Swarm](./Images/3.png)
-![Swarm](./Images/3-a.png)
-![Swarm](./Images/4.png)
+![Swarm](images/1.png)
+![Swarm](images/2.png)
+![Swarm](images/3.png)
+![Swarm](images/3-a.png)
+![Swarm](images/4.png)
 ---
 
 ## Why This Works (Even on One Machine)
