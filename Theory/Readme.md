@@ -116,9 +116,4 @@ Deep dive into Docker image management and registry
 </div>
 
 ---
-
-<div align="center">
-
-### ⭐ If you find this repository helpful, please consider giving it a star!
-
-</div>
+>
