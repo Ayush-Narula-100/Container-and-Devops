@@ -1,12 +1,92 @@
-# Container-and-Devops
->Sap id : **500119444**
+# 🐳 Containerization and DevOps
 
-## LAB
-[Experiment 1. 24/01](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Lab/Experiment%201/Readme.md)
+<div align="center">
 
-[Experiment 2. 31/01](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Lab/Experiment%202/Readme.md)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![DevOps](https://img.shields.io/badge/DevOps-0A0A0A?style=for-the-badge&logo=devops&logoColor=white)
 
-[Experiment 3. 07/02](https://github.com/Ayush-Narula-100/Container-and-Devops/blob/main/Lab/Experiment%203/README.md)
+</div>
 
-### THEORY
-[Class](https://github.com/Ayush-Narula-100/Container-and-Devops/tree/main/Class)
+---
+
+## 👤 My Information
+
+**Name:** Ayush Narula  
+**SAP ID:** 500119444
+
+---
+
+## 🧪 Lab Experiments
+
+<table>
+<tr>
+<td>
+
+### [📝 Experiment 1](Lab/Experiment%201/Readme.md/)
+Introduction to containerization fundamentals
+
+</td>
+</tr>
+<tr>
+<td>
+
+### [📝 Experiment 2](Lab/Experiment%202/Readme.md/)
+Working with Docker containers and images
+
+</td>
+</tr>
+<tr>
+<td>
+
+### [📝 Experiment 3](Lab/Experiment%203/Readme.md)
+Advanced container orchestration
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📚 Theory Classes
+
+| Date | Topic |
+|------|-------|
+| [27-01-2026](Theory/27.01.26/Readme.md/) | Docker Installation on Windows |
+| [28-01-2026](Theory/28.01.26/Readme.md/) | Creating and Running a Java Application using Docker |
+| [30-01-2026](Theory/30.01.26/Readme.md/) | Docker Image Creation, Versioning, and Docker Hub Push |
+| [03-02-2026](Theory/03.02.26/Readme.md/) | Docker Daemon & REST API |
+| [04-02-2026](Theory/04.02.26/Readme.md/) | Docker Daemon Access on Windows |
+| [05-02-2026](Theory/05.02.26/Readme.md/) | Containerising a Python Application using Docker  |
+| [06-02-2026](Theory/06.02.26/Readme.md/) | Containerising a Python Application using Docker (No Source inside Image) |
+| [10-02-2026](Theory/10.02.26/Readme.md/) | Multistage Dockerfiles - Best Practices (Size, Speed & Security) |
+| [11-02-2026 (Assignment)](Theory/11.02.26%20(%20Assignment%20)/Readme.md/) | Backup, Share and Remove Docker Volume |
+| [11-02-2026](Theory/11.02.26/Readme.md/) | To study Docker Volumes and prove that data persists even after container removal |
+
+
+---
+
+## 📂 Repository Structure
+
+```
+.
+├── Lab/
+│   ├── Experiment 1/
+│   ├── Experiment 2/
+│   └── Experiment 3/
+├── Theory/
+│   ├── 27.01.26/
+│   ├── 28.01.26/
+│   ├── 30.01.26/
+│   ├── 03.02.26/
+│   ├── 04.02.26/
+│   ├── 05.02.26/
+│   ├── 06.02.26/
+│   ├── 10.02.26/
+│   ├── 11.02.26 ( Assignment )/
+│   └── 11.02.26/
+└── README.md
+```
+
+
+
