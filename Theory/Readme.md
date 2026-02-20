@@ -1,11 +1,9 @@
-# 📚 Container and DevOps - Classwork Repository
+# 📚 Container and DevOps - Theory Classes
 
 <div align="center">
 
-
 **A comprehensive collection of containerization and DevOps practices**
 
-[🌟 About](#about) • [📖 Lectures](#lectures) • [🛠️ Technologies](#technologies) • [📧 Contact](#contact)
 
 ---
 
@@ -23,14 +21,14 @@ Explore each lecture's detailed documentation and implementation:
 <tr>
 <td align="center" width="50%">
 
-### 📌 [Lecture 1: Introduction to DevOps](link-to-lecture-1)
-Getting started with DevOps fundamentals and core concepts
+### 📌 [27-01-2026: Docker Installation on Windows](27.01.26/Readme.md/)
+Getting started with Docker installation and setup on Windows
 
 </td>
 <td align="center" width="50%">
 
-### 📌 [Lecture 2: Docker Basics](link-to-lecture-2)
-Understanding containerization and Docker fundamentals
+### 📌 [28-01-2026: Creating and Running a Java Application using Docker](28.01.26/Readme.md/)
+Understanding how to containerize Java applications
 
 </td>
 </tr>
@@ -38,14 +36,14 @@ Understanding containerization and Docker fundamentals
 <tr>
 <td align="center" width="50%">
 
-### 📌 [Lecture 3: Docker Networking](link-to-lecture-3)
-Deep dive into Docker networking and container communication
+### 📌 [30-01-2026: Docker Image Creation, Versioning, and Docker Hub Push](30.01.26/Readme.md/)
+Deep dive into Docker image management and registry
 
 </td>
 <td align="center" width="50%">
 
-### 📌 [Lecture 4: Docker Compose](link-to-lecture-4)
-Multi-container applications with Docker Compose
+### 📌 [03-02-2026: Docker Daemon & REST API](03.02.26/Readme.md/)
+Understanding Docker daemon and REST API communication
 
 </td>
 </tr>
@@ -53,62 +51,50 @@ Multi-container applications with Docker Compose
 <tr>
 <td align="center" width="50%">
 
-### 📌 [Lecture 5: Container Orchestration](link-to-lecture-5)
-Introduction to Kubernetes and container orchestration
+### 📌 [04-02-2026: Docker Daemon Access on Windows](04.02.26/Readme.md/)
+Configuring and accessing Docker daemon on Windows
 
 </td>
 <td align="center" width="50%">
 
-### 📌 [Lecture 6: CI/CD Pipelines](link-to-lecture-6)
-Building automated pipelines for continuous integration and deployment
+### 📌 [05-02-2026: Containerising a Python Application using Docker](05.02.26/Readme.md/)
+Building and deploying Python applications in containers
 
 </td>
 </tr>
 
 <tr>
-<td align="center" colspan="2">
+<td align="center" width="50%">
 
-### 📌 [Lecture 7: Advanced DevOps Practices](link-to-lecture-7)
-Monitoring, logging, and production-ready practices
+### 📌 [06-02-2026: Containerising a Python Application using Docker (No Source inside Image)](06.02.26/Readme.md/)
+Advanced containerization techniques without embedding source code
+
+</td>
+<td align="center" width="50%">
+
+### 📌 [10-02-2026: Multistage Dockerfiles - Best Practices (Size, Speed & Security)](10.02.26/Readme.md/)
+Optimizing Docker images using multistage builds
 
 </td>
 </tr>
+
+<tr>
+<td align="center" width="50%">
+
+### 📌 [11-02-2026 (Assignment): Backup, Share and Remove Docker Volume](11.02.26%20(%20Assignment%20)/Readme.md/)
+Assignment on Docker volume management operations
+
+</td>
+<td align="center" width="50%">
+
+### 📌 [11-02-2026: To study Docker Volumes and prove that data persists even after container removal](11.02.26/Readme.md/)
+Understanding Docker volumes and data persistence
+
+</td>
+</tr>
+
 </table>
 
-## 🛠️ Technologies
-
-<div align="center">
-
-| Category | Technologies |
-|----------|-------------|
-| **Containerization** | Docker, Docker Compose |
-| **Orchestration** | Kubernetes, Docker Swarm |
-| **CI/CD** | Jenkins, GitHub Actions, GitLab CI |
-| **Cloud Platforms** | AWS, Azure, GCP |
-| **Monitoring** | Prometheus, Grafana |
-| **Version Control** | Git, GitHub |
-| **Scripting** | Bash, Python |
-
-</div>
-
-
-
-## 📂 Repository Structure
-
-```
-Classwork/
-├── Lecture-1/
-│   ├── README.md
-│   ├── examples/
-│   └── exercises/
-├── Lecture-2/
-│   ├── README.md
-│   ├── docker-files/
-│   └── projects/
-├── Lecture-3/
-│   └── ...
-└── README.md (this file)
-```
 
 
 ## 📧 Who Made It
@@ -119,7 +105,6 @@ Classwork/
 
 **SapID: 500119444**
 
-
 </div>
 
 ---
@@ -127,7 +112,5 @@ Classwork/
 <div align="center">
 
 ### ⭐ If you find this repository helpful, please consider giving it a star!
-
-
 
 </div>
