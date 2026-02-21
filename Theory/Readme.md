@@ -95,8 +95,14 @@ Understanding Docker volumes and data persistence
 <tr>
 <td align="center" width="50%">
 
-### 📌 [20-02-2026: Docker Overlay Networks (Multi-Host)](20.02.26/Readme.md/)
-Deep dive into Docker image management and registry
+### 📌 [18-02-2026:Docker Bridge Network (The Default) ](18.02.26/Readme.md/)
+Docker Bridge Network (The Default)
+
+</td>
+<td align="center" width="50%">
+
+### 📌 [20-02-2026:Docker Overlay Networks (Multi-Host)](20.02.26/Readme.md/)
+Docker Overlay Networks (Multi-Host)
 
 </td>
 </tr>
