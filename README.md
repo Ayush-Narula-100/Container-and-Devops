@@ -23,7 +23,7 @@
 <td>
 
 ### [📝 Experiment 1](Lab/Experiment%201/Readme.md/)
-Introduction to containerization fundamentals
+Comparision of VMs and Containers using Ubuntu and Nginx
 
 </td>
 </tr>
@@ -31,7 +31,7 @@ Introduction to containerization fundamentals
 <td>
 
 ### [📝 Experiment 2](Lab/Experiment%202/Readme.md/)
-Working with Docker containers and images
+Docker Installation, Configuration and Running Images
 
 </td>
 </tr>
@@ -39,7 +39,7 @@ Working with Docker containers and images
 <td>
 
 ### [📝 Experiment 3](Lab/Experiment%203/Readme.md)
-Advanced container orchestration
+NGINX using Docker
 
 </td>
 </tr>
