@@ -163,7 +163,7 @@ You should see the Nginx welcome page HTML output. This confirms that:
 
 ---
 
-##  Resource Utilization Observation
+
 
 ### VM Observation Commands
 
