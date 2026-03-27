@@ -45,6 +45,27 @@ NGINX using Docker
 </tr>
 </table>
 
+### [📝 Experiment 4](Lab/Experiment%204/Readme.md)
+NGINX using Docker
+
+</td>
+</tr>
+</table>
+
+### [📝 Experiment 5](Lab/Experiment%205/Readme.md)
+NGINX using Docker
+
+</td>
+</tr>
+</table>
+
+### [📝 Experiment 6](Lab/Experiment%206/Readme.md)
+NGINX using Docker
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## 📚 Theory Classes
