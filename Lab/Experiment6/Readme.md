@@ -186,7 +186,7 @@ Stop:
 ```bash
 docker compose down
 ```
-
+![images for exp 6](./Images/4.png)
 ---
 
 ## Task 2: Multi-Container Application (WordPress + MySQL)
@@ -198,7 +198,7 @@ Create network:
 ```bash
 docker network create wp-net
 ```
-![images for exp 6](./Images/4.png)
+
 Run MySQL:
 
 ```bash
@@ -312,7 +312,7 @@ services:
       DEBUG: "false"
     restart: unless-stopped
 ```
-![images for exp 6](./Images/10.png)
+
 ---
 
 ## Task 4: Resource Limits Conversion
