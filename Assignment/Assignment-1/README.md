@@ -155,7 +155,7 @@ services:
     environment:
       POSTGRES_DB: mydb
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: dhairya
+      POSTGRES_PASSWORD: ayush
     volumes:
       - pgdata:/var/lib/postgresql/data
     networks:
