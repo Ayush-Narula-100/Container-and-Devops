@@ -175,7 +175,7 @@ services:
       DB_HOST: postgres_db   
       POSTGRES_DB: mydb
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: dhairya
+      POSTGRES_PASSWORD: ayush
     depends_on:
       database:
         condition: service_healthy
