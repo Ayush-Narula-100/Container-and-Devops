@@ -2,34 +2,44 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "anoxi/myapp"
+        DOCKERHUB_USER = "anoxi"
+        IMAGE_NAME = "${DOCKERHUB_USER}/my-app"
+        TAG = "${BUILD_NUMBER}"
     }
 
     stages {
 
-        stage('Clone Source') {
+        stage('Build Docker Image') {
             steps {
-                git 'https://github.com/Ayush-Narula-100/my-app.git'
+                sh 'docker build -t $IMAGE_NAME:$TAG .'
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Test') {
             steps {
-                sh 'docker build -t $IMAGE_NAME:latest .'
+                sh 'echo "Add your tests here"'
             }
         }
 
         stage('Login to Docker Hub') {
             steps {
                 withCredentials([string(credentialsId: 'dockerhub-token', variable: 'DOCKER_TOKEN')]) {
-                    sh 'echo $DOCKER_TOKEN | docker login -u your-dockerhub-username --password-stdin'
+                    sh '''
+                    echo "$DOCKER_TOKEN" | docker login -u "$DOCKERHUB_USER" --password-stdin
+                    '''
                 }
             }
         }
 
         stage('Push to Docker Hub') {
             steps {
-                sh 'docker push $IMAGE_NAME:latest'
+                sh 'docker push $IMAGE_NAME:$TAG'
+            }
+        }
+
+        stage('Cleanup') {
+            steps {
+                sh 'docker rmi $IMAGE_NAME:$TAG || true'
             }
         }
     }
